@@ -1,38 +1,52 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Character.css';
-import CharacterRightGif from '../../assets/characterRightGif.gif'
-import CharacterLeftGif from '../../assets/characterLeftGif.gif'
-import CharacterRight from '../../assets/characterRight.png'
-import CharacterLeft from '../../assets/characterLeft.png'
+import CharacterRightGif from '../../assets/my_character.gif';
+import CharacterLeftGif from '../../assets/my_character_left.gif';
 
-const Character: React.FC = () => {
-    const characterRef = useRef<HTMLImageElement | null>(null); // Referencia al personaje
-    const speed = 50;
+interface CharacterProps {
+    changeSection: (direction: 'next' | 'prev') => void; // Prop para cambiar la sección
+}
+
+const Character: React.FC<CharacterProps> = ({ changeSection }) => {
+    const characterRef = useRef<HTMLImageElement | null>(null);
+    const speed = 140;
     const [image, setImage] = useState(CharacterRightGif);
+    const [position, setPosition] = useState(0); // Estado para la posición horizontal del personaje
+    const [isFading, setIsFading] = useState(false); // Controla el desvanecimiento
 
     const moveCharacter = (direction: string) => {
         if (characterRef.current) {
-            const currentLeft = characterRef.current.offsetLeft;
             const screenWidth = window.innerWidth - characterRef.current.offsetWidth;
 
-            if (direction === 'right' && currentLeft + speed <= screenWidth) {
-                characterRef.current.style.left = `${currentLeft + speed}px`;
-                console.log(currentLeft, speed);
+            if (direction === 'right') {
                 setImage(CharacterRightGif);
-            } else if (direction === 'left' && currentLeft - speed >= 0) {
-                characterRef.current.style.left = `${currentLeft - speed}px`;
-                console.log(currentLeft, speed);
-
-                setImage(CharacterLeftGif); // Cambia a GIF de movimiento hacia la izquierda
-            }
-
-            setTimeout(() => {
-                if (direction === 'right') {
-                    setImage(CharacterRight);
-                } else if (direction === 'left') {
-                    setImage(CharacterLeft);
+                if (position + speed < screenWidth) {
+                    setPosition(position + speed);
+                } else {
+                    const isEdging: boolean = changeSection('next');
+                    if (isEdging) {
+                        setIsFading(true);
+                        setTimeout(() => {
+                            setIsFading(false); // Quita el desvanecimiento
+                            setPosition(25);
+                        }, 2000);
+                    }
                 }
-            }, 400);
+            } else if (direction === 'left') {
+                setImage(CharacterLeftGif);
+                if (position - speed > 0) {
+                    setPosition(position - speed);
+                } else {
+                    const isEdging: boolean = changeSection('prev');
+                    if (isEdging) {
+                        setIsFading(true);
+                        setTimeout(() => {
+                            setPosition(screenWidth - 50);
+                            setIsFading(false);
+                        }, 2000);
+                    }
+                }
+            }
         }
     };
 
@@ -49,9 +63,20 @@ const Character: React.FC = () => {
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
-    }, []);
+    }, [position]);
 
-    return <img className="character" src={image} ref={characterRef}></img>;
+    return (
+        <img
+            className={`character ${isFading ? 'fading' : ''} ${position < 0 ? 'walking-left' : 'walking-right'}`}
+            src={image}
+            ref={characterRef}
+            style={{
+                left: `${position}px`,
+                transform: position < 0 ? 'scaleX(-1)' : 'scaleX(1)',
+                transition: 'left 0.4s ease' // Transición suave
+            }}
+        />
+    );
 };
 
 export default Character;

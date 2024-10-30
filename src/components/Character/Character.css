@@ -1,6 +1,93 @@
 .character {
     position: absolute;
-    bottom: 1.5em;
+    bottom: 0;
     left: 0.5em;
-    width: 13em;
+    width: 12em;
+    z-index: 1;
+}
+
+.static {
+    /*animation: floating 3s ease infinite;*/
+}
+
+.walking-right {
+    animation: right 0.4s ease-in-out forwards;
+}
+
+.walking-left {
+    animation: left 0.4s ease-in-out forwards;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes walking-Right {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes walking-Left {
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.character.fading {
+    animation: fadeOut 1.0s forwards;
+}
+
+.character:not(.fading) {
+    animation: fadeIn 3.0s forwards;
 }
