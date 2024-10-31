@@ -2,8 +2,8 @@ body {
     scroll-behavior: smooth;
     body { --scrollbar-width: 10px; --scrollbar-height: 10px; --scrollbar-border-radius: 36px; --scrollbar-border-thickness: 0px; --scrollbar-thumb-color: #4f4301; --scrollbar-track-color: rgba(255, 255, 255, 0); --scrollbar-border-color: #FFFFFF00; --scrollbar-corner-color: #FFFFFF00; --scrollbar-button-color: #3F3F4600; } body::-webkit-scrollbar { width: var(--scrollbar-width, 10px); height: var(--scrollbar-height, 10px); } body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color, #3B82F6); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); } body::-webkit-scrollbar-track { background: var(--scrollbar-track-color, #A1A1AA); } body::-webkit-scrollbar-corner { background: var(--scrollbar-corner-color, #FFFFFF); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); } body::-webkit-scrollbar-button:vertical:start:increment, #preview::-webkit-scrollbar-button:vertical:end:decrement, #preview::-webkit-scrollbar-button:horizontal:start:increment, #preview::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
     margin: 0;
-    overflow-x: hidden;
-    background-image: url("assets/5.webp");
+    overflow: hidden;
+    background-image: url("assets/dark-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,9 +29,27 @@ body {
 
 .home {
     justify-content: space-evenly;
-    /*gap: 35em;*/
+
 }
 
 .about-me {
-    /*background-image: url("assets/mountain-night.jpg");*/
+    flex-direction: column;
+    justify-content: flex-start;
+    /*gap: 0.5em;*/
+    /*padding-top: 0.5rem;*/
+    /*align-items: flex-start;*/
+}
+
+.service {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3em;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    /*text-align: center;*/
+    /*align-items: flex-start;*/
+    justify-content: flex-start;
 }

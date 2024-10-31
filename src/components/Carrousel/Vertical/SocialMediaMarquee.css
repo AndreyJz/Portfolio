@@ -1,0 +1,113 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 15em;
+  height: 16em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  width: 2.5em;
+  height: 30em;
+  background-image: linear-gradient(90deg, #ffffff1c, transparent);
+  z-index: 2;
+  border-radius: 10px 0 0 10px;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  width: 2.5em;
+  height: 30em;
+  background-image: linear-gradient(-90deg, #ffffff1c, transparent);
+  z-index: 9;
+  border-radius: 0 10px 10px 0;
+}
+
+.basic-marquee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.basic-marquee .button {
+  transition: all 0.3s ease;
+}
+
+.basic-marquee .button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.basic-marquee-1 {
+  justify-content: flex-end;
+  animation: marquee 20s linear infinite;
+}
+
+.basic-marquee-2 {
+  justify-content: flex-start;
+  animation: marquee2 27s linear infinite;
+  margin-top: 1em;
+  gap: 0;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  min-width: 15em;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translatey(210%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translatey(-260%);
+  }
+}
+
+.basic-marquee svg {
+  width: 6em;
+}
+
+.basic-marquee button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

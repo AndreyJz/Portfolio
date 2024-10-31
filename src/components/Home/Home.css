@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hint {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    color: #cacaca;
+    position: absolute;
+    top: 0;
+    left: 1em;
+}
 
 .info {
     /*margin-right: 2em;*/
@@ -7,8 +17,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
-    /*backdrop-filter: blur(5px);*/
-    border-radius: 15px;
+    backdrop-filter: blur(5px);
     padding: 1em;
     width: 87%;
 
@@ -30,13 +39,14 @@
     gap: 2em;
 }
 
-.content {
+.normal-title {
     display: flex;
     flex-direction: column;
     font-family: "Playfair Display", serif;
     font-style: normal;
     color: #c1c2c5;
     padding-left: 2em;
+    width: max-content;
 
     * {
         font-size: 3em;
@@ -292,4 +302,391 @@
     100% {
         transform: translateY(0%);
     }
+}
+
+.About {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    /*margin-top: 2em;*/
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    /*backdrop-filter: blur(5px);*/
+    border-radius: 15px;
+    padding: 1em;
+    width: 63%;
+    /*line-height:1.3em;*/
+
+    * {
+        margin: 0;
+    }
+
+    h1 , h2 {
+        color: #cacaca;
+        font-size: 2.8em;
+        padding-left: 1em;
+    }
+}
+.Description {
+    /*width: 90%;*/
+    color: #c1c2c5;
+    font-size: 1.3em;
+}
+
+.photo-container {
+    width: 15em;
+    height: 18em;
+    /*margin: 1em;*/
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 30px #bebebe,
+    -5px -5px 30px #ffffff;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    padding-top: 1em;
+    /*align-items: flex-start;*/
+    justify-content: center;
+    gap: 4em;
+}
+
+.top-section {
+    margin-top: 0.5em;
+    align-items: center;
+    /*justify-self: center;*/
+}
+
+.bottom-section {
+    align-items: center;
+    /*justify-self: center;*/
+}
+
+.item {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    margin-top: 6em;
+    align-self: flex-start;
+    width:45em;
+    height: 26em;
+    border-radius: 8px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(227, 226, 226, 0.3));
+    /*background: #e0e0e0;*/
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.4em;
+    box-shadow: 0 20px 50px 20px rgba(255, 255, 255, 0.24);
+    overflow: hidden;
+
+    * {
+        margin: 0;
+    }
+}
+
+.zzz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+.span-info {
+    width: 85%;
+    text-align: justify;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 0.75em;
+    opacity: 0;
+    display: none;
+    color: #cacaca;
+}
+
+.item p {
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: flex 0.5s;
+    /*background: linear-gradient(145deg, rgba(136, 135, 135, 0.9), #000);*/
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item p:hover {
+    flex: 4;
+    align-items: center;
+    /*padding-top: 2em;*/
+
+    .span-info {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.item p span {
+    padding: 0.2em;
+    text-align: center;
+    transform: rotate(-0deg);
+    transition: transform 0.5s;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #374b61;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1;
+}
+
+.item p:hover span {
+    transform: rotate(0);
+}
+
+.item p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.025);
+    z-index: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.item p:hover::before {
+    opacity: 1;
+}
+
+.tarjeta {
+    width: 190px;
+    height: 254px;
+    margin: 0 auto;
+    background-color: #555;
+    border-radius: 8px;
+    z-index: 1;
+    scale: 1;
+    transition: ease 0.5s;
+}
+
+.tarjeta:hover {
+    scale: 0.95;
+    transform: rotate(-1deg);
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.card__content {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    gap: 1.5em;
+
+    h1 {
+        margin: 0;
+        color: #c8c6c6;
+        font-size: 1.44em;
+    }
+
+    p {
+        color: #fff0e1;
+        font-size: 1.1em;
+        margin: 0;
+    }
+}
+
+.service-list {
+    display: flex;
+    gap: 1em;
+}
+
+.services {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.info-projects {
+    align-self: flex-end;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    display: flex;
+    /*gap: .5em;*/
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 0.4em 0.8em 0.4em 1em;
+    height: 3em;
+    width: 100%;
+    color: #cacaca;
+
+    * {
+        margin: 0;
+    }
+
+    h1 , h2 {
+        font-size: 1em;
+        /*padding-left: 1em;*/
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    a {
+       color: #cacaca;
+    }
+}
+
+.info-projects-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-projects-links {
+    display: flex;
+    gap: 0.5em;
+}
+
+.social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-reflect: below 15px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+.social-login-icons svg {
+    width: 4em;
+}
+
+.social-icon-1,
+.social-icon-1-1,
+.social-icon-2,
+.social-icon-2-2,
+.social-icon-3,
+.social-icon-3-3,
+.social-icon-4,
+.social-icon-4-4 {
+    width: 5em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 20px 0 0px 0;
+}
+
+.icon svg {
+    fill: #111;
+}
+
+.socialcontainer {
+    height: 6.2em;
+    overflow: hidden;
+}
+.social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgba(209, 209, 209, 0.78);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+}
+.social-icon-1 svg,
+.social-icon-2 svg,
+.social-icon-3 svg,
+.social-icon-4 svg {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgba(225, 222, 222, 0);
+}
+.socialcontainer:hover .social-icon-1 {
+    transform: translateY(-6.3em);
+}
+.socialcontainer:hover .social-icon-1 svg,
+.socialcontainer:hover .social-icon-2 svg,
+.socialcontainer:hover .social-icon-3 svg,
+.socialcontainer:hover .social-icon-4 svg {
+    opacity: 1;
+}
+.social-icon-2 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: linear-gradient(
+            72.44deg,
+            #ff7a00 11.92%,
+            #ff0169 51.56%,
+            #d300c5 85.69%
+    );
+}
+.socialcontainer:hover .social-icon-2 {
+    transform: translateY(-6.3em);
+
+}
+.social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #316ff6;
+}
+
+.socialcontainer:hover .social-icon-3 {
+    transform: translateY(-6.3em);
+
+}
+.social-icon-4 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+
+    background: linear-gradient(
+            180deg,
+            rgba(129, 34, 144, 1) 0%,
+            rgba(77, 34, 124, 1) 91%
+    );
+}
+
+.socialcontainer:hover .social-icon-4 {
+    transform: translateY(-6.3em);
 }
