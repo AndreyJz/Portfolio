@@ -32,57 +32,57 @@
 }
 
 .carousel__face:nth-child(2) {
-  background-image: url("src/assets/pepita_confections.png");
+  background-image: url("../../../assets/pepita_confections.png");
   transform: rotateY( 0deg) translateZ(282px);
   transition: ease .4s;
 }
 .carousel__face:nth-child(4) {
-  background-image: url("src/assets/forum_surveys.png");
+  background-image: url("../../../assets/forum_surveys.png");
   transform: rotateY( 72deg) translateZ(282px);
   transition: ease .4s;
 }
 .carousel__face:nth-child(3) {
-  background-image: url("src/assets/ultimate_pharmacy.png");
+  background-image: url("../../../assets/ultimate_pharmacy.png");
   transform: rotateY( 144deg) translateZ(282px);
   transition: ease .4s;
 }
 .carousel__face:nth-child(1) {
-  background-image: url("src/assets/jsa_service_managers.png");
+  background-image: url("../../../assets/jsa_service_managers.png");
   transform: rotateY(216deg) translateZ(282px);
   transition: ease .4s;
 }
 .carousel__face:nth-child(5) {
-  background-image: url("src/assets/portfolio.png");
+  background-image: url("../../../assets/portfolio.png");
   transform: rotateY(288deg) translateZ(282px);
   transition: ease .4s;
 }
 
 .carousel__face:nth-child(2):hover {
-  background-image: url("src/assets/pepita_confections2.png");
+  background-image: url("../../../assets/pepita_confections2.png");
   transform: translateZ(350px);
   width: 31em;
   scale: 1.13;
 }
 .carousel__face:nth-child(4):hover {
-  background-image: url("src/assets/forum_surveys2.png");
+  background-image: url("../../../assets/forum_surveys2.png");
   transform: rotateY( 72deg) translateZ(350px);
   /*width: 31em;*/
   scale: 1.13;
 }
 .carousel__face:nth-child(3):hover {
-  background-image: url("src/assets/ultimate_pharmacy2.png");
+  background-image: url("../../../assets/ultimate_pharmacy2.png");
   transform: rotateY( 144deg) translateZ(350px);
   /*width: 31em;*/
   scale: 1.13;
 }
 .carousel__face:nth-child(1):hover {
-  background-image: url("src/assets/jsa_service_manager.png");
+  background-image: url("../../../assets/jsa_service_manager.png");
   transform: rotateY(216deg) translateZ(350px);
   width: 31em;
   scale: 1.13;
 }
 .carousel__face:nth-child(5):hover {
-  background-image: url("src/assets/portfolio2.png");
+  background-image: url("../../../assets/portfolio2.png");
   transform: rotateY(288deg) translateZ(350px);
   width: 31em;
   scale: 1.13;

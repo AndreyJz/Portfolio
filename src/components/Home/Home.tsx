@@ -17,7 +17,9 @@ import {
     SiBlender, SiTypescript, SiThreedotjs
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
-import { BiLogoSpringBoot, BiLogoTypescript, BiSolidData } from "react-icons/bi"
+import { BiLogoSpringBoot, BiLogoTypescript, BiSolidData } from "react-icons/bi";
+import Me from '../../assets/me.jpeg';
+import Violin from '../../assets/foto-violin.jfif';
 
 function Home() {
     const [isModelVisible, setIsModelVisible] = useState(true);
@@ -165,10 +167,10 @@ function Home() {
                                 proyectos. Mis Soft-Skills como la comunicación y escucha activa me facilitan el trabajo
                                 en equipo y la capacidad de tomar la iniciativa.</p>
                         </div>
-                        <img className="photo-container" src={"src/assets/Me.jpeg"} alt={"foto"}/>
+                        <img className="photo-container" src={Me} alt={"foto"}/>
                     </div>
                     <div className="bottom-section">
-                        <img className="photo-container" src={"src/assets/foto-violin.jfif"} alt={"foto"}/>
+                        <img className="photo-container" src={Violin} alt={"foto"}/>
                         <div className="About">
                             <h1>Objetives</h1>
                             <p className="Description">Mi ambición es convertirme en un experto desarrollador de

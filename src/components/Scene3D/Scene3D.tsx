@@ -2,6 +2,9 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, Environment } from '@react-three/drei';
 import { Suspense, useState } from 'react';
 import Model3D from '../Model3D/Model3D';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import Character3D from '../../assets/MeCopy.glb'
 
 export default function Scene3D() {
     const [isVisible, setIsVisible] = useState(true);
@@ -19,7 +22,7 @@ export default function Scene3D() {
                     />
 
                     <Model3D
-                        url="src/assets/MeCopy.glb"
+                        url={Character3D}
                         scale={0.7}
                         position={[0, -1.6, 1.6]}
                         visible={isVisible}
