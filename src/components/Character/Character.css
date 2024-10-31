@@ -3,7 +3,7 @@
     bottom: 0;
     left: 0.5em;
     width: 12em;
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 .static {
