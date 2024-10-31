@@ -14,7 +14,7 @@ import {
     SiTailwindcss,
     SiApachetomcat,
     SiNetlify,
-    SiBlender, SiTypescript, SiThreedotjs, SiLinkedin
+    SiBlender, SiTypescript, SiThreedotjs
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { BiLogoSpringBoot, BiLogoTypescript, BiSolidData } from "react-icons/bi"
@@ -77,7 +77,7 @@ function Home() {
                                                 Terminal
                                             </p>
 
-                                            <button className="copy_toggle" tabIndex="-1" type="button">
+                                            <button className="copy_toggle" type="button">
                                                 <svg
                                                     width="16px"
                                                     height="16px"

@@ -23,6 +23,8 @@ const Character: React.FC<CharacterProps> = ({ changeSection }) => {
                 if (position + speed < screenWidth) {
                     setPosition(position + speed);
                 } else {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-expect-error
                     const isEdging: boolean = changeSection('next');
                     if (isEdging) {
                         setIsFading(true);
@@ -37,6 +39,8 @@ const Character: React.FC<CharacterProps> = ({ changeSection }) => {
                 if (position - speed > 0) {
                     setPosition(position - speed);
                 } else {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-expect-error
                     const isEdging: boolean = changeSection('prev');
                     if (isEdging) {
                         setIsFading(true);

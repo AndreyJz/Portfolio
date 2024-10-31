@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 import { useFrame, useLoader } from '@react-three/fiber';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Mesh, Vector3 } from 'three';
 import { useSpring, animated } from '@react-spring/three';

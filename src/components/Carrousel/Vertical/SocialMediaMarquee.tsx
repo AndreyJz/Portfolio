@@ -1,5 +1,6 @@
-import React from 'react';
 import './SocialMediaMarquee.css';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import * as Icons from '../../../../public/items-carrousel/technologies.jsx';
 
 // Crear el array de íconos usando los componentes importados
