@@ -7,7 +7,7 @@
     color: #cacaca;
     position: absolute;
     top: 0;
-    left: 1em;
+    left: 1rem;
 }
 
 .info {
@@ -18,7 +18,7 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    padding: 1em;
+    padding: 1rem;
     width: 87%;
 
     * {
@@ -36,20 +36,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2em;
+    gap: 2vi;
 }
 
 .normal-title {
+    user-select: none;
     display: flex;
     flex-direction: column;
     font-family: "Playfair Display", serif;
     font-style: normal;
     color: #c1c2c5;
-    padding-left: 2em;
+    padding-left: 2rem;
     width: max-content;
 
     * {
-        font-size: 3em;
+        font-size: 3vi;
         margin: 0;
     }
 
@@ -67,7 +68,7 @@
     border-radius: 12px;
     /*background-color: rgba(255, 255, 255, 0.1);*/
     /*backdrop-filter: blur(8px);*/
-    width: 20em;
+    width: 21vi;
 }
 .wrap {
     display: flex;
@@ -78,7 +79,7 @@
     /*border: 0.5px solid #525252;*/
     border-radius: 8px;
     overflow: hidden;
-    height: 6em;
+    height: 6.5vi;
 }
 .terminal {
     display: flex;
@@ -92,7 +93,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    height: 3em;
+    height: 3.1vi;
     padding-inline: 12px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -105,14 +106,15 @@
     height: 2.5rem;
     user-select: none;
     font-weight: 600;
+    font-size: 1.1vi;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     color: #292929;
 }
 .title > svg {
-    height: 18px;
-    width: 18px;
+    height: 1.6vi;
+    width: 1.6vi;
     margin-top: 2px;
     color: #0d498c;
 }
@@ -129,8 +131,8 @@
     cursor: pointer;
 }
 .copy_toggle > svg {
-    width: 20px;
-    height: 20px;
+    width: 1.3vi;
+    height: 1.3vi;
 }
 .copy_toggle:active > svg > path,
 .copy_toggle:focus-within > svg > path {
@@ -144,7 +146,7 @@
     border-bottom-left-radius: 8px;
     overflow-x: auto;
     padding: 1rem;
-    line-height: 19px;
+    line-height: 1.05vi;
     color: white;
     background-color: #171717;
     white-space: nowrap;
@@ -158,7 +160,7 @@
     background-color: transparent;
     overflow: hidden;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1.03vi;
 }
 .pre code:nth-child(1) {
     color: #575757;
@@ -167,7 +169,7 @@
     color: #374b61;
 }
 .cmd {
-    height: 19px;
+    height: 1.3vi;
     position: relative;
     display: flex;
     align-items: center;
@@ -218,7 +220,7 @@
     }
     30%,
     70% {
-        width: 215px;
+        width: 226px;
         max-width: max-content;
     }
 }
@@ -235,7 +237,7 @@
     position: relative;
     border-width: 0;
     color: rgb(19, 19, 19);
-    font-size: 15px;
+    font-size: 1.04vi;
     font-weight: 600;
     border-radius: 4px;
     z-index: 1;
@@ -247,9 +249,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    min-height: 40px;
-    padding: 0 10px;
+    gap: .6vi;
+    min-height: 2.6vi;
+    padding: 0 .6vi;
     border-radius: 4px;
     z-index: 1;
     background-color: #ffffff;
@@ -309,7 +311,7 @@
     "Liberation Mono", "Courier New", monospace;
     /*margin-top: 2em;*/
     display: flex;
-    gap: .5em;
+    gap: .5rem;
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
@@ -317,7 +319,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     /*backdrop-filter: blur(5px);*/
     border-radius: 15px;
-    padding: 1em;
+    padding: 1rem;
     width: 63%;
     /*line-height:1.3em;*/
 
@@ -327,36 +329,36 @@
 
     h1 , h2 {
         color: #cacaca;
-        font-size: 2.8em;
-        padding-left: 1em;
+        font-size: 2.9vi;
+        padding-left: 1rem;
     }
 }
 .Description {
     /*width: 90%;*/
     color: #c1c2c5;
-    font-size: 1.3em;
+    font-size: 1.38vi;
 }
 
 .photo-container {
-    width: 15em;
-    height: 18em;
+    width: 16vi;
+    height: 19vi;
     /*margin: 1em;*/
     border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 5px 5px 30px #bebebe,
-    -5px -5px 30px #ffffff;
+    background: #d1d1d1;
+    box-shadow: 0 0 30px #a3a3a3,
+    0 0 30px #4e4e4e;
 }
 
 .top-section, .bottom-section {
     display: flex;
-    padding-top: 1em;
+    padding-top: 1rem;
     /*align-items: flex-start;*/
     justify-content: center;
-    gap: 4em;
+    gap: 4rem;
 }
 
 .top-section {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
     align-items: center;
     /*justify-self: center;*/
 }
@@ -369,17 +371,17 @@
 .item {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-    margin-top: 6em;
+    margin-top: 6rem;
     align-self: flex-start;
-    width:45em;
-    height: 26em;
+    width:47vi;
+    height: 27vi;
     border-radius: 8px;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(227, 226, 226, 0.3));
     /*background: #e0e0e0;*/
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding: 0.4em;
+    gap: .3vi;
+    padding: 0.4rem;
     box-shadow: 0 20px 50px 20px rgba(255, 255, 255, 0.24);
     overflow: hidden;
 
@@ -393,7 +395,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.6em;
+    gap: .7rem;
 }
 
 .span-info {
@@ -401,7 +403,7 @@
     text-align: justify;
     font-weight: normal;
     text-transform: none;
-    font-size: 0.75em;
+    font-size: 1.15vi;
     opacity: 0;
     display: none;
     color: #cacaca;
@@ -432,15 +434,15 @@
 }
 
 .item p span {
-    padding: 0.2em;
+    padding: 0.2rem;
     text-align: center;
     transform: rotate(-0deg);
     transition: transform 0.5s;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.53vi;
     color: #374b61;
     font-weight: bold;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     position: relative;
     z-index: 1;
 }
@@ -468,8 +470,8 @@
 }
 
 .tarjeta {
-    width: 190px;
-    height: 254px;
+    width: 12.5vi;
+    height: 16.55vi;
     margin: 0 auto;
     background-color: #555;
     border-radius: 8px;
@@ -486,19 +488,19 @@
 .tools {
     display: flex;
     align-items: center;
-    padding: 9px;
+    padding: 0.7vi;
 }
 
 .circle {
-    padding: 0 4px;
+    padding: 0 .2vi;
 }
 
 .box {
     display: inline-block;
     align-items: center;
-    width: 10px;
-    height: 10px;
-    padding: 1px;
+    width: 0.7vi;
+    height: 0.7vi;
+    padding: .06vi;
     border-radius: 50%;
 }
 
@@ -519,32 +521,32 @@
     "Liberation Mono", "Courier New", monospace;
     display: flex;
     flex-direction: column;
-    padding-left: 1em;
-    gap: 1.5em;
+    padding-left: 1rem;
+    gap: 1.5rem;
 
     h1 {
         margin: 0;
         color: #c8c6c6;
-        font-size: 1.44em;
+        font-size: 1.5vi;
     }
 
     p {
         color: #fff0e1;
-        font-size: 1.1em;
+        font-size: 1.142vi;
         margin: 0;
     }
 }
 
 .service-list {
     display: flex;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .services {
-    margin-top: 6em;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .info-projects {
@@ -558,8 +560,8 @@
     text-align: justify;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    padding: 0.4em 0.8em 0.4em 1em;
-    height: 3em;
+    padding: 0.4rem 0.8rem 0.4rem 1rem;
+    height: 3.2vi;
     width: 100%;
     color: #cacaca;
 
@@ -568,12 +570,12 @@
     }
 
     h1 , h2 {
-        font-size: 1em;
+        font-size: 0.93vi;
         /*padding-left: 1em;*/
     }
 
     p {
-        font-size: 0.8em;
+        font-size: 0.8vi;
     }
 
     a {
@@ -588,17 +590,17 @@
 
 .info-projects-links {
     display: flex;
-    gap: 0.5em;
+    gap: 0.4rem;
 }
 
 .social-login-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.6rem;
     -webkit-box-reflect: below 15px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
 }
 .social-login-icons svg {
-    width: 4em;
+    width: 4vi;
 }
 
 .social-icon-1,
@@ -609,13 +611,13 @@
 .social-icon-3-3,
 .social-icon-4,
 .social-icon-4-4 {
-    width: 5em;
-    height: 5em;
+    width: 6vi;
+    height: 6vi;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    margin: 20px 0 0px 0;
+    margin: 0.6rem 0 0 0;
 }
 
 .icon svg {
@@ -623,7 +625,7 @@
 }
 
 .socialcontainer {
-    height: 6.2em;
+    height: 7vi;
     overflow: hidden;
 }
 .social-icon-1 {
@@ -644,7 +646,7 @@
     background-color: rgba(225, 222, 222, 0);
 }
 .socialcontainer:hover .social-icon-1 {
-    transform: translateY(-6.3em);
+    transform: translateY(-6.5vi);
 }
 .socialcontainer:hover .social-icon-1 svg,
 .socialcontainer:hover .social-icon-2 svg,
@@ -663,7 +665,7 @@
     );
 }
 .socialcontainer:hover .social-icon-2 {
-    transform: translateY(-6.3em);
+    transform: translateY(-6.5vi);
 
 }
 .social-icon-3 {
@@ -673,7 +675,7 @@
 }
 
 .socialcontainer:hover .social-icon-3 {
-    transform: translateY(-6.3em);
+    transform: translateY(-6.5vi);
 
 }
 .social-icon-4 {
@@ -688,5 +690,5 @@
 }
 
 .socialcontainer:hover .social-icon-4 {
-    transform: translateY(-6.3em);
+    transform: translateY(-6.5vi);
 }

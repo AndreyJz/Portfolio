@@ -1,14 +1,7 @@
-/*body {*/
-/*  margin: 0;*/
-/*  background: lightgray;*/
-/*  text-align: center;*/
-/*  font-family: sans-serif;*/
-/*  color: #fefefe;*/
-/*}*/
 .container-carrousel {
   position: relative;
-  width: 28em;
-  margin: 1em auto 0 auto;
+  width: 28vi;
+  margin: 1rem auto 0 auto;
   perspective: 1000px;
 }
 
@@ -21,8 +14,8 @@
 }
 .carousel__face {
   position: absolute;
-  width: 25em;
-  height: 15em;
+  width: 26vi;
+  height: 16.3vi;
   top: 20px;
   left: 10px;
   right: 10px;
@@ -33,59 +26,60 @@
 
 .carousel__face:nth-child(2) {
   background-image: url("../../../assets/pepita_confections.png");
-  transform: rotateY( 0deg) translateZ(282px);
+  transform: rotateY( 0deg) translateZ(18.6vi);
   transition: ease .4s;
 }
 .carousel__face:nth-child(4) {
   background-image: url("../../../assets/forum_surveys.png");
-  transform: rotateY( 72deg) translateZ(282px);
+  transform: rotateY( 71deg) translateZ(18.6vi);
   transition: ease .4s;
 }
 .carousel__face:nth-child(3) {
   background-image: url("../../../assets/ultimate_pharmacy.png");
-  transform: rotateY( 144deg) translateZ(282px);
+  transform: rotateY( 142deg) translateZ(18.7vi);
   transition: ease .4s;
 }
 .carousel__face:nth-child(1) {
   background-image: url("../../../assets/jsa_service_managers.png");
-  transform: rotateY(216deg) translateZ(282px);
+  transform: rotateY(216deg) translateZ(18.6vi);
   transition: ease .4s;
+  width: 27.5vi;
 }
 .carousel__face:nth-child(5) {
   background-image: url("../../../assets/portfolio.png");
-  transform: rotateY(288deg) translateZ(282px);
+  transform: rotateY(288deg) translateZ(18.6vi);
   transition: ease .4s;
 }
 
 .carousel__face:nth-child(2):hover {
   background-image: url("../../../assets/pepita_confections2.png");
-  transform: translateZ(350px);
-  width: 31em;
-  scale: 1.13;
+  transform: translateZ(23vi);
+  width: 31vi;
+  scale: 1.1;
 }
 .carousel__face:nth-child(4):hover {
   background-image: url("../../../assets/forum_surveys2.png");
-  transform: rotateY( 72deg) translateZ(350px);
+  transform: rotateY( 72deg) translateZ(23vi);
   /*width: 31em;*/
-  scale: 1.13;
+  scale: 1.1;
 }
 .carousel__face:nth-child(3):hover {
   background-image: url("../../../assets/ultimate_pharmacy2.png");
-  transform: rotateY( 144deg) translateZ(350px);
+  transform: rotateY( 144deg) translateZ(23vi);
   /*width: 31em;*/
-  scale: 1.13;
+  scale: 1.1;
 }
 .carousel__face:nth-child(1):hover {
   background-image: url("../../../assets/jsa_service_manager.png");
-  transform: rotateY(216deg) translateZ(350px);
-  width: 31em;
-  scale: 1.13;
+  transform: rotateY(216deg) translateZ(23vi);
+  width: 34vi;
+  scale: 1.1;
 }
 .carousel__face:nth-child(5):hover {
   background-image: url("../../../assets/portfolio2.png");
-  transform: rotateY(288deg) translateZ(350px);
-  width: 31em;
-  scale: 1.13;
+  transform: rotateY(288deg) translateZ(23vi);
+  width: 33vi;
+  scale: 1.1;
 }
 
 

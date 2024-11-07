@@ -43,7 +43,7 @@ body {
 .service {
     align-items: flex-start;
     justify-content: center;
-    gap: 3em;
+    gap: 3.5vi;
 }
 
 .project {

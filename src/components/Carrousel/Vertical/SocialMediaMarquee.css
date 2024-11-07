@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
-  width: 15em;
-  height: 16em;
+  gap: 1vi;
+  width: 15.2vi;
+  height: 16.55vi;
   position: relative;
   overflow: hidden;
   border-radius: 14px;
@@ -13,12 +13,12 @@
 .content::before {
   content: "";
   position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
+  left: -10%;
+  top: -83%;
+  transform: rotate(90deg) translateY(-50%);
   bottom: 0;
-  width: 2.5em;
-  height: 30em;
+  width: 2.5vi;
+  height: 30vi;
   background-image: linear-gradient(90deg, #ffffff1c, transparent);
   z-index: 2;
   border-radius: 10px 0 0 10px;
@@ -27,12 +27,12 @@
 .content::after {
   content: "";
   position: absolute;
-  right: 0%;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 140%;
+  top: 5%;
+  transform: rotate(90deg) translateY(-50%);
   bottom: 0;
-  width: 2.5em;
-  height: 30em;
+  width: 2.5vi;
+  height: 30vi;
   background-image: linear-gradient(-90deg, #ffffff1c, transparent);
   z-index: 9;
   border-radius: 0 10px 10px 0;
@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0.63vi;
   width: 100%;
 }
 
@@ -57,13 +57,13 @@
 
 .basic-marquee-1 {
   justify-content: flex-end;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 .basic-marquee-2 {
   justify-content: flex-start;
-  animation: marquee2 27s linear infinite;
-  margin-top: 1em;
+  animation: marquee2 25s linear infinite;
+  margin-top: 1rem;
   gap: 0;
 }
 
@@ -71,8 +71,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 15px;
-  min-width: 15em;
+  gap: 1rem;
+  min-width: 15vi;
   height: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -85,7 +85,7 @@
     transform: translateY(10%);
   }
   100% {
-    transform: translatey(210%);
+    transform: translatey(214%);
   }
 }
 
@@ -94,12 +94,12 @@
     transform: translateY(-10%);
   }
   100% {
-    transform: translatey(-260%);
+    transform: translatey(-235%);
   }
 }
 
 .basic-marquee svg {
-  width: 6em;
+  width: 6vi;
 }
 
 .basic-marquee button {
