@@ -260,9 +260,9 @@
 }
 
 .download-button:hover {
-    box-shadow: rgba(233, 233, 233, 0.555) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(233, 233, 233, 0.555) 0 54px 55px,
+    rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px,
+    rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
 .download {
@@ -692,3 +692,221 @@
 .socialcontainer:hover .social-icon-4 {
     transform: translateY(-6.5vi);
 }
+
+.social-icon-3 {
+    svg {
+        fill: #cacaca;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 700px) {
+    .right-container {
+        width: 60%;
+    }
+
+    .normal-title {
+        * {
+            font-size: 5vi;
+        }
+
+        padding-left: 1.2rem;
+    }
+
+    .card {
+        padding: .5rem;
+        width: 60%;
+    }
+
+    .download-button {
+        width: 18%;
+        font-size: 1.5vi;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .wrap {
+        height: 70%;
+    }
+
+    .head {
+        height: 5vi;
+    }
+
+    .title {
+        font-size: 2.3vi;
+
+        svg {
+            width: 2.5vi;
+            height: 2.5vi;
+        }
+    }
+
+    .copy_toggle > svg {
+        width: 1.7vi;
+        height: 1.5vi;
+    }
+
+    .body {
+        padding: .7rem;
+        line-height: 3vi;
+    }
+
+    .pre {
+        font-size: 2.1vi;
+    }
+
+    .top-section {
+        gap: 2.3rem;
+    }
+
+    .About {
+        width: 55vi;
+        h1 {
+            font-size: 4vi;
+        }
+    }
+
+    .Description {
+        font-size: 2.5vi;
+    }
+
+    .photo-container {
+        height: 25vi;
+        width: 20vi;
+    }
+    
+    .bottom-section {
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    .item {
+        margin-top: 0;
+        align-self: center;
+        width: 70%;
+        height: 50vi;
+
+        p span {
+            font-size: 2.8vi;
+        }
+
+        .span-info {
+            font-size: 2vi;
+        }
+    }
+
+    .services {
+        align-self: center;
+        margin-top: 0;
+        align-items: center;
+
+        .normal-title {
+            padding-left: 0;
+            h1 {
+                font-size: 8vi;
+            }
+        }
+    }
+
+    .tarjeta {
+        width: 26vi;
+        height: 40vi;
+    }
+
+    .circle {
+        padding: 0.125rem;
+    }
+
+    .box {
+        width: 1.5vi;
+        height: 1.5vi;
+        padding: 0.2vi;
+    }
+
+    .card__content {
+        gap: .7rem;
+
+        h1 {
+            font-size: 3vi;
+        }
+
+        p {
+            font-size: 2.7vi;
+        }
+    }
+
+    .info-projects {
+        height: 5.2vi;
+        padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+
+        h1 , h2 {
+            font-size: 1.5vi;
+        }
+
+        p {
+            font-size: 1.2vi;
+        }
+
+        svg {
+            width: 2vi;
+            height: 2vi;
+        }
+    }
+
+    .info-projects-icon {
+        height: 3vi;
+        align-items: center;
+    }
+
+    .socialcontainer {
+        height: 11vi;
+    }
+
+    .social-login-icons {
+        gap: 0.5rem;
+    }
+
+    .social-icon-1-1, .social-icon-2-2, .social-icon-3-3, .social-icon-4-4{
+        svg {
+            fill: rgba(202, 202, 202, 0.68);
+        }
+        margin: 0.2rem;
+    }
+
+    .social-icon-1, .social-icon-2, .social-icon-3, .social-icon-4{
+        margin-top: 1rem;
+    }
+
+    .social-icon-1,
+    .social-icon-1-1,
+    .social-icon-2,
+    .social-icon-2-2,
+    .social-icon-3,
+    .social-icon-3-3,
+    .social-icon-4,
+    .social-icon-4-4 {
+        svg {
+            width: 6vi;
+            height: 6vi;
+        }
+        width: 9vi;
+        height: 9vi;
+    }
+
+    .socialcontainer:hover .social-icon-1 {
+        transform: translateY(-11.5vi);
+    }
+    .socialcontainer:hover .social-icon-2 {
+        transform: translateY(-11.5vi);
+    }
+    .socialcontainer:hover .social-icon-3 {
+        transform: translateY(-11.5vi);
+    }
+    .socialcontainer:hover .social-icon-4 {
+        transform: translateY(-11.5vi);
+    }
+
+}
+

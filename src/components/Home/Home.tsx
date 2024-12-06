@@ -19,7 +19,7 @@ import {
 import { GrMysql } from "react-icons/gr";
 import { BiLogoSpringBoot, BiLogoTypescript, BiSolidData } from "react-icons/bi";
 import Me from '../../assets/me1.jpeg';
-import Violin from '../../assets/foto-violin1.jpeg';
+import Violin from '../../assets/me2.jpeg';
 import Cv from '../../../public/Andrey Jerez Rubio - 2024-10-31 - CVE - Con contacto.pdf';
 
 function Home() {
@@ -105,7 +105,7 @@ function Home() {
 
                                         <div className="body">
         <pre className="pre">          <code>-&nbsp;</code>
-          <code>npx&nbsp;</code>
+          <code style={{fontWeight: 'bold'}}>npx&nbsp;</code>
             {!isModelVisible ? <code className="cmd" data-cmd="Press the KeyBoard Arrows!"></code> :
                 <code className="cmd" data-cmd="Click the 3D Model!"></code>}
         </pre>
@@ -187,18 +187,18 @@ function Home() {
                 </div>
                 <div className="container">
                     <div className="item">
-                        <p><span><div className="zzz">
+                        <p><span><span className="zzz">
                             <a>-/ Mission /-</a>
                             <a className="span-info">Desarrollo soluciones Fullstack innovadoras que combinan creatividad y una experiencia de usuario efectiva, ayudando a individuos y empresas a impulsar su crecimiento tecnológico. Con un enfoque en el compañerismo y el compromiso, entrego productos de alta calidad en tiempos óptimos, destacándome por mi capacidad de trabajo en equipo y mi constante reinvención.</a>
-                        </div></span></p>
-                        <p><span><div className="zzz">
+                        </span></span></p>
+                        <p><span><span className="zzz">
                             <a>-/ Vision /-</a>
                             <a className="span-info">Ser un referente en el desarrollo Fullstack, liderando proyectos innovadores que impulsen el crecimiento tecnológico de empresas y emprendedores. Ofrecer soluciones avanzadas y creativas, adaptadas a las nuevas tecnologías, manteniendo la calidad y compromiso en cada proyecto.</a>
-                        </div></span></p>
-                        <p><span><div className="zzz">
+                        </span></span></p>
+                        <p><span><span className="zzz">
                             <a>-/ Values /-</a>
                             <a className="span-info" style={{ textAlign: "left", width: "max-content" }}>* Aprendizaje continuo <br/> * Servicio <br/> * Pasión por la tecnología <br/> * Escalabilidad </a>
-                        </div></span></p>
+                        </span></span></p>
                     </div>
                 </div>
                 <div className="container service">
@@ -414,7 +414,7 @@ function Home() {
                                 </svg>
                             </div>
                             <div className="social-icon-2">
-                                <a href="https://www.instagram.com/andreyjz.35/" target="_blank">
+                                <a href="https://www.instagram.com/andreyjzz/" target="_blank">
                                     <svg
                                         fill="white"
                                         className="svgIcon"

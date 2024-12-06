@@ -10,8 +10,14 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  animation: rotate360 60s infinite forwards linear;
+  animation: rotate360 15s infinite forwards linear;
+  animation-play-state: running;
 }
+
+.carousel:hover {
+  animation-play-state: paused;
+}
+
 .carousel__face {
   position: absolute;
   width: 26vi;
@@ -82,12 +88,58 @@
   scale: 1.1;
 }
 
-
 @keyframes rotate360 {
   from {
     transform: rotateY(0deg);
   }
   to {
     transform: rotateY(-360deg);
+  }
+}
+
+@media (orientation: portrait) and (max-width: 700px) {
+  .container-carrousel {
+    width: 44vi;
+  }
+
+  .carousel__face {
+    width: 45.98vi;
+    height: 29.04vi;
+  }
+
+  .carousel__face:nth-child(2) {
+    transform: rotateY( 0deg) translateZ(35.3vi);
+  }
+  .carousel__face:nth-child(4) {
+    transform: rotateY( 71deg) translateZ(35.3vi);
+  }
+  .carousel__face:nth-child(3) {
+    transform: rotateY( 142deg) translateZ(35.5vi);
+  }
+  .carousel__face:nth-child(1) {
+    transform: rotateY(216deg) translateZ(35.3vi);
+    width: 45vi;
+  }
+  .carousel__face:nth-child(5) {
+    transform: rotateY(288deg) translateZ(35.3vi);
+  }
+
+  .carousel__face:nth-child(2):hover {
+    transform: rotateY( 0deg) translateZ(40.3vi);
+    width: 53vi;
+  }
+  .carousel__face:nth-child(4):hover {
+    transform: rotateY( 71deg) translateZ(40.3vi);
+  }
+  .carousel__face:nth-child(3):hover {
+    transform: rotateY( 142deg) translateZ(40.5vi);
+  }
+  .carousel__face:nth-child(1):hover {
+    transform: rotateY(216deg) translateZ(40.3vi);
+    width: 60vi;
+  }
+  .carousel__face:nth-child(5):hover {
+    transform: rotateY(288deg) translateZ(40.3vi);
+    width: 55vi;
   }
 }

@@ -29,7 +29,12 @@ body {
 
 .home {
     justify-content: space-evenly;
+}
 
+.canvas {
+    position: relative;
+    width: 26vi;
+    height: 26vi
 }
 
 .about-me {
@@ -52,4 +57,41 @@ body {
     /*text-align: center;*/
     /*align-items: flex-start;*/
     justify-content: flex-start;
+}
+
+@media (orientation: portrait) and (max-width: 600px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .horizontal-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10vi;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 45vh;
+    }
+
+    .home {
+        justify-content: center;
+        height: 70vh;
+    }
+
+    .canvas {
+        width: 50vi;
+        height: 50vi;
+    }
+
+    .about-me {
+        height: 90vh;
+        width: 70vw;
+    }
+
+    .service {
+        height: 90vh;
+        gap: 5rem;
+    }
 }

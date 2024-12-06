@@ -10,7 +10,7 @@ export default function Scene3D() {
     const [isVisible, setIsVisible] = useState(true);
 
     return (
-        <div style={{ position: 'relative', width: '26vi', height: '26vi' }}>
+        <div className={'canvas'}>
             <Canvas>
                 <Suspense fallback={null}>
                     <PerspectiveCamera makeDefault position={[5, 0, 3]} />
