@@ -59,7 +59,7 @@ body {
     justify-content: flex-start;
 }
 
-@media (orientation: portrait) and (max-width: 600px) {
+@media (orientation: portrait) or (max-width: 750px) or (hover: none) or (pointer: coarse) {
     body {
         overflow-y: auto;
     }
@@ -72,12 +72,18 @@ body {
 
     .container {
         flex-direction: column;
-        height: 45vh;
+        height: 55vh;
+    }
+
+    .container:nth-child(5) {
+        justify-content: flex-start;
+        margin-top: 10vh;
+        height: 35vh;
     }
 
     .home {
         justify-content: center;
-        height: 70vh;
+        height: 85vh;
     }
 
     .canvas {
@@ -86,12 +92,13 @@ body {
     }
 
     .about-me {
-        height: 90vh;
+        height: 100%;
         width: 70vw;
     }
 
     .service {
-        height: 90vh;
-        gap: 5rem;
+        margin-top: 5vi;
+        height: 100%;
+        gap: 7vi;
     }
 }

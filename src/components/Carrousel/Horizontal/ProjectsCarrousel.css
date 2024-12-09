@@ -1,7 +1,7 @@
 .container-carrousel {
   position: relative;
   width: 28vi;
-  margin: 1rem auto 0 auto;
+  margin: 1vi auto 0 auto;
   perspective: 1000px;
 }
 
@@ -97,7 +97,7 @@
   }
 }
 
-@media (orientation: portrait) and (max-width: 700px) {
+@media (orientation: portrait) or (max-width: 750px) or (hover: none) or (pointer: coarse) {
   .container-carrousel {
     width: 44vi;
   }
